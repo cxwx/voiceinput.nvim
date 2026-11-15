@@ -24,7 +24,7 @@ plugin/voiceinput.lua          :VoiceInputHealth / :VoiceInputBootstrap (usable 
 
 ```lua
 {
-  dir = "~/software/nvim/voiceinput.nvim/",
+  "cxwx/voiceinput.nvim",
   keys = { { "<C-/>", desc = "voiceinput" } },
   -- Auto-install after lazy.nvim clones/updates the plugin:
   -- downloads the model and builds the venv.
@@ -35,6 +35,10 @@ plugin/voiceinput.lua          :VoiceInputHealth / :VoiceInputBootstrap (usable 
   },
 }
 ```
+
+For local development of the plugin itself, replace the repo spec with a
+local path: `dir = "~/software/nvim/voiceinput.nvim/"` (keep the rest the
+same).
 
 If `opts.data_dir` is not the default, set the same path for the build phase:
 
